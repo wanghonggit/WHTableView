@@ -1,0 +1,25 @@
+PODS:
+  - WHTableView (0.1.0):
+    - WHTableView/Base (= 0.1.0)
+    - WHTableView/Core (= 0.1.0)
+    - WHTableView/Expand (= 0.1.0)
+  - WHTableView/Base (0.1.0)
+  - WHTableView/Core (0.1.0):
+    - WHTableView/Base
+  - WHTableView/Expand (0.1.0):
+    - WHTableView/Base
+    - WHTableView/Core
+
+DEPENDENCIES:
+  - WHTableView (from `../`)
+
+EXTERNAL SOURCES:
+  WHTableView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WHTableView: 8e8dfafe7870773f233720aa4c7e7053660b0f82
+
+PODFILE CHECKSUM: cf19b8378a27817e0e20377cfae8228707080f59
+
+COCOAPODS: 1.11.3

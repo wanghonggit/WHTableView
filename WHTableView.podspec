@@ -28,10 +28,22 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/wanghonggit/WHTableView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 
-  s.source_files = 'WHTableView/Classes/**/*'
+#  s.source_files = 'WHTableView/Classes/**/*'
   
+  s.subspec "Base" do |ss|
+      ss.source_files = "WHTableView/Base/*"
+  end
+  s.subspec "Core" do |ss|
+    ss.source_files = "WHTableView/Core/*"
+    ss.dependency 'WHTableView/Base'
+  end
+  s.subspec "Expand" do |ss|
+    ss.source_files = "WHTableView/Expand/*"
+    ss.dependency 'WHTableView/Core'
+    ss.dependency 'WHTableView/Base'
+  end
   # s.resource_bundles = {
   #   'WHTableView' => ['WHTableView/Assets/*.png']
   # }

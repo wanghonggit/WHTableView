@@ -1,0 +1,6 @@
+framework module Pods_WHTableView_Example {
+  umbrella header "Pods-WHTableView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

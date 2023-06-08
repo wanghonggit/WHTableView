@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		1E2AAE69E0664160B0847CF7 /* Pods-WHTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WHTableView_Tests.release.xcconfig"; path = "Target Support Files/Pods-WHTableView_Tests/Pods-WHTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		24E655036BA269467CFC0AC5 /* WHTableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WHTableView.podspec; path = ../WHTableView.podspec; sourceTree = "<group>"; };
+		24E655036BA269467CFC0AC5 /* WHTableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WHTableView.podspec; path = ../WHTableView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3822B9AFE033C0A9ABAFAB1C /* Pods-WHTableView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WHTableView_Example.release.xcconfig"; path = "Target Support Files/Pods-WHTableView_Example/Pods-WHTableView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		480050327569750E7DBDBB3B /* Pods-WHTableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WHTableView_Example.debug.xcconfig"; path = "Target Support Files/Pods-WHTableView_Example/Pods-WHTableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4E3B7EA5D813F86F3826AD4F /* Pods-WHTableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WHTableView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WHTableView_Tests/Pods-WHTableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -43,10 +43,10 @@
 		607FACE51AFB9204008FA782 /* WHTableView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WHTableView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		71B291386AACBB381A8183BA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		71B291386AACBB381A8183BA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7C5299432E8B58BAFC571F61 /* Pods_WHTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WHTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E392EE4058DE7CDBB1EB72 /* Pods_WHTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WHTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A660123BA42B497F33A0C029 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A660123BA42B497F33A0C029 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 				4E3B7EA5D813F86F3826AD4F /* Pods-WHTableView_Tests.debug.xcconfig */,
 				1E2AAE69E0664160B0847CF7 /* Pods-WHTableView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = B4WZLV5NYQ;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = B4WZLV5NYQ;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -478,7 +480,9 @@
 			baseConfigurationReference = 480050327569750E7DBDBB3B /* Pods-WHTableView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B4WZLV5NYQ;
 				INFOPLIST_FILE = WHTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -493,7 +497,9 @@
 			baseConfigurationReference = 3822B9AFE033C0A9ABAFAB1C /* Pods-WHTableView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B4WZLV5NYQ;
 				INFOPLIST_FILE = WHTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -507,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E3B7EA5D813F86F3826AD4F /* Pods-WHTableView_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = B4WZLV5NYQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -516,6 +523,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -529,11 +537,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E2AAE69E0664160B0847CF7 /* Pods-WHTableView_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = B4WZLV5NYQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

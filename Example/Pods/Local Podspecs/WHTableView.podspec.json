@@ -1,0 +1,48 @@
+{
+  "name": "WHTableView",
+  "version": "0.1.0",
+  "summary": "A short description of WHTableView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wanghonggit/WHTableView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wanghonggit": "995406924@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/wanghonggit/WHTableView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "subspecs": [
+    {
+      "name": "Base",
+      "source_files": "WHTableView/Base/*"
+    },
+    {
+      "name": "Core",
+      "source_files": "WHTableView/Core/*",
+      "dependencies": {
+        "WHTableView/Base": [
+
+        ]
+      }
+    },
+    {
+      "name": "Expand",
+      "source_files": "WHTableView/Expand/*",
+      "dependencies": {
+        "WHTableView/Core": [
+
+        ],
+        "WHTableView/Base": [
+
+        ]
+      }
+    }
+  ]
+}
