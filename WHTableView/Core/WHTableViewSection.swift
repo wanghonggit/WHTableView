@@ -9,7 +9,7 @@ import UIKit
 public typealias WHTableViewSectionBlock = (WHTableViewSection) -> Void
 public class WHTableViewSection: NSObject {
     private weak var _tableView: WHTableView? // section持有所在的table
-    var wh_tableView: WHTableView {
+    public var wh_tableView: WHTableView {
         get {
             guard let table = _tableView else {
                 wh_print("table没有添加section")
@@ -22,25 +22,25 @@ public class WHTableViewSection: NSObject {
         }
     }
     /// section上的所有row
-    var rows: [WHTableViewRow] = []
+    public var rows: [WHTableViewRow] = []
     // 高度默认44
-    var headerHeight: CGFloat! = 44
-    var footerHeight: CGFloat! = 44
-    var headerView: UIView?
-    var footerView: UIView?
-    var headerTitle: String?
-    var footerTitle: String?
-    var headerWillDisplayHandler: WHTableViewSectionBlock?
+    public var headerHeight: CGFloat! = 44
+    public var footerHeight: CGFloat! = 44
+    public var headerView: UIView?
+    public var footerView: UIView?
+    public var headerTitle: String?
+    public var footerTitle: String?
+    public var headerWillDisplayHandler: WHTableViewSectionBlock?
     public func setHeaderWillDisplayHandler(_ block: WHTableViewSectionBlock?) {
         headerWillDisplayHandler = block
     }
 
-    var headerDidEndDisplayHandler: WHTableViewSectionBlock?
+    public var headerDidEndDisplayHandler: WHTableViewSectionBlock?
     public func setHeaderDidEndDisplayHandler(_ block: WHTableViewSectionBlock?) {
         headerDidEndDisplayHandler = block
     }
     /// 当前section的下标
-    var sectionIndex: Int {
+    public var sectionIndex: Int {
         let index = wh_tableView.sections.firstIndex { (sec) -> Bool in
             sec == self
         }
@@ -48,26 +48,26 @@ public class WHTableViewSection: NSObject {
         return index!
     }
     
-    override init() {
+    public override init() {
         super.init()
         headerHeight = CGFloat.leastNormalMagnitude
         footerHeight = CGFloat.leastNormalMagnitude
     }
     /// 添加cell
-    func add(row: WHTableViewRow) {
+    public func add(row: WHTableViewRow) {
         row.wh_section = self
         rows.append(row)
     }
     /// 移除cell
-    func remove(row: WHTableViewRow) {
+    public func remove(row: WHTableViewRow) {
         rows.remove(at: row.indexPath.row)
     }
     /// 移除所有cell
-    func removeAllRows() {
+    public func removeAllRows() {
         rows.removeAll()
     }
     /// 替换cell
-    func replaceRowsFrom(rowAry: [WHTableViewRow]) {
+    public func replaceRowsFrom(rowAry: [WHTableViewRow]) {
         removeAllRows()
         rows = rows + rowAry
     }

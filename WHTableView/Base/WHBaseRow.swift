@@ -8,6 +8,6 @@
 import UIKit
 
 class WHBaseRow: UITableViewCell, WHTableViewRowProtocol {
-    var row: WHRowProtocol!
+    var row: WHTableViewRow!
     func rowWillAppear() {}
 }

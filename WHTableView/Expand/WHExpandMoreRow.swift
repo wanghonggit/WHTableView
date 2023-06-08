@@ -7,27 +7,28 @@
 
 import UIKit
 
-class WHExpandMoreRow: WHTableViewRow {
+open class WHExpandMoreRow: WHTableViewRow {
     /// 当前节点层级
-    var level: Int = 0
+    public var level: Int = 0
     /// 是否展开
-    var isExpand = false
+    public var isExpand = false
     /// 所有row节点
-    var rowSubLevel: [WHExpandMoreRow] = []
+    public var rowSubLevel: [WHExpandMoreRow] = []
     /// 展开或收起回调
-    var expandBlock: ((WHExpandMoreRow) -> Void)?
+    public var expandBlock: ((WHExpandMoreRow) -> Void)?
     /// 父节点
-    var superLevelRow: WHExpandMoreRow?
+    public var superLevelRow: WHExpandMoreRow?
     /// 收起时是否保持下级的树形结构
-    var isKeepStructure = true
+    public var isKeepStructure = true
     /// 是否自动收起
-    var isAutoClose = false
+    public var isAutoClose = false
     
-    override init() {
+    public override init() {
         super.init()
         selectionStyle = .none
         
-        setSelectionHandler { (callBackItem: WHExpandMoreRow) in
+        setSelectionHandler { [weak self] (callBackItem: WHExpandMoreRow) in
+            guard let self = self else {return}
             if let superLevel = self.superLevelRow, superLevel.isAutoClose {
                 // 处理已经展开的row
                 let arrRows = superLevel.getAllBelowRows().filter {

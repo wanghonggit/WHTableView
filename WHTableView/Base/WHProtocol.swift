@@ -12,7 +12,8 @@ public protocol WHRowProtocol where Self: WHTableViewRow {}
 extension WHTableViewRow: WHRowProtocol {}
 
 public protocol WHTableViewRowProtocol where Self: UITableViewCell {
-    var row: WHRowProtocol! { get set }
+    associatedtype ZJCellItemClass: WHRowProtocol
+    var row: ZJCellItemClass! { get set }
     // cell将要出现
     func rowWillAppear()
     // cell已经出现
@@ -21,12 +22,12 @@ public protocol WHTableViewRowProtocol where Self: UITableViewCell {
     func rowDidDisappear()
 }
 public extension WHTableViewRowProtocol {
-    var _row: WHRowProtocol {
+    var _row: WHTableViewRow {
         get {
             return row
         }
         set {
-            row = newValue
+            row = newValue as? Self.ZJCellItemClass
         }
     }
     func rowDidAppear() {}

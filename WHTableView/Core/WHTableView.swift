@@ -8,12 +8,12 @@
 import UIKit
 
 public class WHTableView: NSObject {
-    weak var scrollDelegate: WHTableViewScrollDelegate?
-    var tableView: UITableView!
+    public weak var scrollDelegate: WHTableViewScrollDelegate?
+    public var tableView: UITableView!
     // table上添加的所有section
-    var sections: [WHTableViewSection] = []
+    public var sections: [WHTableViewSection] = []
     
-    init(tableView: UITableView) {
+    public init(tableView: UITableView) {
         super.init()
         self.tableView = tableView
         tableView.delegate = self
@@ -61,12 +61,12 @@ public class WHTableView: NSObject {
         tableView.endUpdates()
     }
     /// 注册cellId
-    public func register(_ cell: WHTableViewRowProtocol.Type, _ row: WHTableViewRow, _ bundle: Bundle = Bundle.main) {
+    public func register(_ cell: any WHTableViewRowProtocol.Type, _ row: WHTableViewRow.Type, _ bundle: Bundle = Bundle.main) {
         wh_print("\(cell) 注册")
         if bundle.path(forResource: "\(cell)", ofType: "nib") != nil {
-            tableView.register(UINib(nibName: "\(cell)", bundle: bundle), forCellReuseIdentifier: row.cellId)
+            tableView.register(UINib(nibName: "\(cell)", bundle: bundle), forCellReuseIdentifier: "\(row)")
         } else {
-            tableView.register(cell, forCellReuseIdentifier: row.cellId)
+            tableView.register(cell, forCellReuseIdentifier: "\(row)")
         }
     }
 
@@ -139,11 +139,11 @@ extension WHTableView: UITableViewDelegate {
     }
 
     public func tableView(_: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt _: IndexPath) {
-        (cell as! WHTableViewRowProtocol).rowDidDisappear()
+        (cell as! (any WHTableViewRowProtocol)).rowDidDisappear()
     }
 
     public func tableView(_: UITableView, willDisplay cell: UITableViewCell, forRowAt _: IndexPath) {
-        (cell as! WHTableViewRowProtocol).rowDidAppear()
+        (cell as! (any WHTableViewRowProtocol)).rowDidAppear()
     }
 
     public func tableView(_: UITableView, willDisplayHeaderView _: UIView, forSection section: Int) {
@@ -238,9 +238,9 @@ extension WHTableView: UITableViewDataSource {
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let (_, item) = getSectionAndItem(indexPath: (indexPath.section, indexPath.row))
 
-        var cell = tableView.dequeueReusableCell(withIdentifier: item.cellId) as? WHTableViewRowProtocol
+        var cell = tableView.dequeueReusableCell(withIdentifier: item.cellId) as? (any WHTableViewRowProtocol)
         if cell == nil {
-            cell = (WHBaseRow(style: item.cellStyle, reuseIdentifier: item.cellId) as WHTableViewRowProtocol)
+            cell = (WHBaseRow(style: item.cellStyle, reuseIdentifier: item.cellId) as (any WHTableViewRowProtocol))
         }
         let unwrappedCell = cell!
         unwrappedCell.textLabel?.text = item.titleText

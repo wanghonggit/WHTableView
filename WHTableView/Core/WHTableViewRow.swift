@@ -7,7 +7,7 @@
 
 import UIKit
 public typealias WHTableViewRowBlock = (WHTableViewRow) -> Void
-public class WHTableViewRow: NSObject {
+open class WHTableViewRow: NSObject {
     // 从section中获取row所在的table
     var wh_tableView: WHTableView {
         return wh_section.wh_tableView
@@ -22,25 +22,25 @@ public class WHTableViewRow: NSObject {
             _section = newValue
         }
     }
-    var cellId: String! // cellIdentifier
-    var cellHeight: CGFloat! // cell高度,在cell中设置
-    var titleText: String = "" // cellTitleText
-    var detailLabelText: String = "" // cellDetailText
-    var textAlignment: NSTextAlignment = .left
-    var image: UIImage?
-    var highlightedImage: UIImage?
-    var cellStyle: UITableViewCell.CellStyle = .default
-    var accessoryType: UITableViewCell.AccessoryType = .none
-    var selectionStyle: UITableViewCell.SelectionStyle = .default
-    var editingStyle: UITableViewCell.EditingStyle = .none
-    var accessoryView: UIView?
+    public var cellId: String! // cellIdentifier
+    public var cellHeight: CGFloat! // cell高度,在cell中设置
+    public var titleText: String = "" // cellTitleText
+    public var detailLabelText: String = "" // cellDetailText
+    public var textAlignment: NSTextAlignment = .left
+    public var image: UIImage?
+    public var highlightedImage: UIImage?
+    public var cellStyle: UITableViewCell.CellStyle = .default
+    public var accessoryType: UITableViewCell.AccessoryType = .none
+    public var selectionStyle: UITableViewCell.SelectionStyle = .default
+    public var editingStyle: UITableViewCell.EditingStyle = .none
+    public var accessoryView: UIView?
     /// 是否选中cell
-    var isSelected: Bool {
+    public var isSelected: Bool {
         return row.isSelected
     }
-    var isAllowSelect: Bool = true
+    public var isAllowSelect: Bool = true
     /// 当前cell的位置
-    var indexPath: IndexPath {
+    public var indexPath: IndexPath {
         let rowIndex = wh_section.rows.firstIndex { (row) -> Bool in
             row == self
         }
@@ -51,7 +51,7 @@ public class WHTableViewRow: NSObject {
         return IndexPath(row: rowIndex!, section: sectionIndex!)
     }
     /// 当前cell
-    var row: UITableViewCell {
+    public var row: UITableViewCell {
         guard let row = wh_tableView.tableView.cellForRow(at: indexPath) else {
             wh_print("获取tableViewRow失败，需要先添加tableViewRow到tableView并且reload只有在能获取，且row需要在屏幕范围内显示")
             fatalError()
@@ -74,7 +74,7 @@ public class WHTableViewRow: NSObject {
         }
     }
     
-    override init() {
+    public override init() {
         super.init()
         // 默认cellId为cell类名
         cellId = "\(type(of: self))"
@@ -82,23 +82,23 @@ public class WHTableViewRow: NSObject {
         cellHeight = 44
     }
     /// 刷新row
-    func reload(_ animation: UITableView.RowAnimation) {
+    public func reload(_ animation: UITableView.RowAnimation) {
         wh_print("刷新cell---\(indexPath)")
         wh_tableView.tableView.beginUpdates()
         wh_tableView.tableView.reloadRows(at: [indexPath], with: animation)
         wh_tableView.tableView.endUpdates()
     }
     /// 选择row
-    func select(animated: Bool = true, scrollPosition: UITableView.ScrollPosition = .none) {
+    public func select(animated: Bool = true, scrollPosition: UITableView.ScrollPosition = .none) {
         if isAllowSelect {
             wh_tableView.tableView.selectRow(at: indexPath, animated: animated, scrollPosition: scrollPosition)
         }
     }
-    func deselect(animated: Bool = true) {
+    public func deselect(animated: Bool = true) {
         wh_tableView.tableView.deselectRow(at: indexPath, animated: animated)
     }
     /// 删除row
-    func delete(_ animation: UITableView.RowAnimation = .automatic) {
+    public func delete(_ animation: UITableView.RowAnimation = .automatic) {
         if _section == nil {
             wh_print("删除失败，section未添加")
             return
@@ -112,8 +112,8 @@ public class WHTableViewRow: NSObject {
         wh_tableView.tableView.deleteRows(at: [indexPath], with: animation)
     }
     /// 计算row的高度
-    func autoHeight(_ table: WHTableView) {
-        guard let row = table.tableView.dequeueReusableCell(withIdentifier: cellId) as? WHTableViewRowProtocol else {
+    public func autoHeight(_ table: WHTableView) {
+        guard let row = table.tableView.dequeueReusableCell(withIdentifier: cellId) as? WHBaseRow else {
             wh_print("cell未注册cellIdentifier")
             return
         }
