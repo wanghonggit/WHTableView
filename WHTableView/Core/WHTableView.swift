@@ -195,20 +195,11 @@ extension WHTableView: UITableViewDelegate {
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let section = sections[indexPath.section]
         let item = section.rows[indexPath.row]
-        #if swift(>=4.2)
-            if item.cellHeight == UITableView.automaticDimension, tableView.estimatedRowHeight == 0 {
-                tableView.estimatedRowHeight = 44
-                tableView.estimatedSectionFooterHeight = 44
-                tableView.estimatedSectionHeaderHeight = 44
-            }
-        #else
-            if item.cellHeight == UITableViewAutomaticDimension, tableView.estimatedRowHeight == 0 {
-                tableView.estimatedRowHeight = 44
-                tableView.estimatedSectionFooterHeight = 44
-                tableView.estimatedSectionHeaderHeight = 44
-            }
-        #endif
-
+        if item.cellHeight == UITableView.automaticDimension, tableView.estimatedRowHeight == 0 {
+            tableView.estimatedRowHeight = 44
+            tableView.estimatedSectionFooterHeight = 44
+            tableView.estimatedSectionHeaderHeight = 44
+        }
         return item.cellHeight
     }
 }

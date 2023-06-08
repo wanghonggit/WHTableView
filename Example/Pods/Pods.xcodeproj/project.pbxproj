@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		22EC5F3E1DA330361626E71687B238CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2D331D5B297B8706B0C2817558668B66 /* WHBaseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A673D55BCFCF401D8FE83A1FB104999 /* WHBaseRow.swift */; };
-		3B07EFA7C6FAFA034D8A0F6632BE4AE6 /* WHTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4AB5B8A306AD3AF9E504AFAB7A064F6 /* WHTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54E6AE879AA6F99475062B315943554F /* WHProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B4FE952641A3142303CE528F275C0 /* WHProtocol.swift */; };
-		552FCDBE90B6FC71AF2B0F01789AE936 /* WHTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E85ADB11D07A58F245DA86D3197F308 /* WHTableViewSection.swift */; };
+		24076F78B9A19FA5AFEBFC59949D62AD /* WHTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF80F4072C2066317CEE64F7B74D0D7C /* WHTableView.swift */; };
+		39F52BD51980A4CB92BBCC2E773F428C /* WHTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D9C40EDE27DD58BEA63C1D0334C67 /* WHTableViewSection.swift */; };
+		3B07EFA7C6FAFA034D8A0F6632BE4AE6 /* WHTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D6F042F3567330EB4674F6AA661B75 /* WHTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4195A2E7B8D64C5EF437FE69CACABA98 /* WHTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F246B13507ED040449BA45DF6CF31CD9 /* WHTableView-dummy.m */; };
+		6A0DF28E311483971904032B301D2A7C /* WHExpandMoreRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9E1B2B98A80A0B8897626AB66FE575 /* WHExpandMoreRow.swift */; };
 		7235B4F86C1A66BD1BEB300C93F2342F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		892FAA3A43F06CCF085EAD6D9490BD27 /* WHLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AFF87F998E2677190B6AC271EABB96 /* WHLog.swift */; };
+		74BF0FB6D88836942A766D1106172E43 /* WHProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4625D04E6476DBBC7062AA39D70432F0 /* WHProtocol.swift */; };
 		8D4CC86825716262A73A8942127EDCFD /* Pods-WHTableView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 264D2857B14626492A6BD6ECABBEDAD2 /* Pods-WHTableView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A55FCBF168D471DC3609418B7EECBD88 /* WHTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEE4B98D74FA3F00FD06FEE49C95238 /* WHTableView.swift */; };
 		A7A5646BC50F4618F30760DB33477EA7 /* Pods-WHTableView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2ECBD190561CF136713FDC34626CBB3 /* Pods-WHTableView_Tests-dummy.m */; };
 		B14D60EBE4E328DDF63507C658C11F51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		B3D245F968EA2199492171AAEE835953 /* WHExpandMoreRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB083AD2882C53F8CCAB258D8330B6A8 /* WHExpandMoreRow.swift */; };
-		C9491B110EB3DB954E0FEBA0F427E3E7 /* WHTableViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FA754968C428312B02A97A2E325E2F /* WHTableViewRow.swift */; };
 		DAB5B0F1DFD00057D4D43EA6D8474D35 /* Pods-WHTableView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EBC6FCB4421435814DFCE60EF1E3E6FB /* Pods-WHTableView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE5B5F141595C5108435A006838E3DAF /* WHTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A801BDAA01CD8358D5B54E07D94052C /* WHTableView-dummy.m */; };
+		E1DB91D231619487D8CC717381020D7A /* WHTableViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50BDB6F0B56D483D423DA5421923CB4 /* WHTableViewRow.swift */; };
+		E89701BF6837C0BFE5D6E5CBDA1DC7C5 /* WHLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB0D1C395BCA8D932C4523948397D47 /* WHLog.swift */; };
 		E98D0028B2799FEA37B7BCF72695D658 /* Pods-WHTableView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8495040B7D3CF04F158123C08BDF66EA /* Pods-WHTableView_Example-dummy.m */; };
+		FDECB8545171AF02F73A1E6DC54BAB4D /* WHBaseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85316E947002A58C75FA93256A3573B9 /* WHBaseRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,45 +43,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00875655E82EAF9EF3425141E8BD5CD9 /* WHTableView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WHTableView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		17A18E1D4CDC3ABF7BA789E77AA18F06 /* Pods-WHTableView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WHTableView_Tests-Info.plist"; sourceTree = "<group>"; };
-		1A673D55BCFCF401D8FE83A1FB104999 /* WHBaseRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHBaseRow.swift; path = WHTableView/Base/WHBaseRow.swift; sourceTree = "<group>"; };
 		1CCCC27ED5F1853983D3D30B494E65FA /* Pods-WHTableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WHTableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		261BCA4A166F27127DDA8BC2D2A4FDB8 /* WHTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WHTableView.release.xcconfig; sourceTree = "<group>"; };
 		264D2857B14626492A6BD6ECABBEDAD2 /* Pods-WHTableView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WHTableView_Example-umbrella.h"; sourceTree = "<group>"; };
-		386D24C18B6580C753DD72A5C995DDBD /* WHTableView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WHTableView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3B4930FDC173893571BAEA098CEA85D2 /* Pods-WHTableView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WHTableView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3E85ADB11D07A58F245DA86D3197F308 /* WHTableViewSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHTableViewSection.swift; path = WHTableView/Core/WHTableViewSection.swift; sourceTree = "<group>"; };
-		42AFF87F998E2677190B6AC271EABB96 /* WHLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHLog.swift; path = WHTableView/Base/WHLog.swift; sourceTree = "<group>"; };
-		4A801BDAA01CD8358D5B54E07D94052C /* WHTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WHTableView-dummy.m"; sourceTree = "<group>"; };
+		4625D04E6476DBBC7062AA39D70432F0 /* WHProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHProtocol.swift; path = WHTableView/Core/WHProtocol.swift; sourceTree = "<group>"; };
 		507E41C4BE16415DB09765D9D8531638 /* Pods-WHTableView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WHTableView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		58D3B3B4232BE08CB5DF0577E54CC977 /* WHTableView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WHTableView; path = WHTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F1AE96BBABE7FA7B7EE697DE598CBA /* Pods-WHTableView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WHTableView_Tests.modulemap"; sourceTree = "<group>"; };
 		5B02856AB3B36B4756F2676FA811AE69 /* Pods-WHTableView_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WHTableView_Tests"; path = Pods_WHTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D13269D97990DFD6FF3DBF943052FCD /* Pods-WHTableView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WHTableView_Example-Info.plist"; sourceTree = "<group>"; };
-		63FA754968C428312B02A97A2E325E2F /* WHTableViewRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHTableViewRow.swift; path = WHTableView/Core/WHTableViewRow.swift; sourceTree = "<group>"; };
-		652E00BD554D5325A8717FA2F5BD863B /* WHTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WHTableView-prefix.pch"; sourceTree = "<group>"; };
+		62D6F042F3567330EB4674F6AA661B75 /* WHTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WHTableView-umbrella.h"; sourceTree = "<group>"; };
+		691C922E712E7C7354D30D72469DF174 /* WHTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WHTableView.modulemap; sourceTree = "<group>"; };
+		6A5D9C40EDE27DD58BEA63C1D0334C67 /* WHTableViewSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHTableViewSection.swift; path = WHTableView/Core/WHTableViewSection.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7CA06E313A81B1F1E4B3A5EC980A646E /* Pods-WHTableView_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WHTableView_Example"; path = Pods_WHTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E84CA572A1ABABECC80375ED160BE5E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		833C86CD85379CD7E7719A303F004F98 /* WHTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WHTableView.release.xcconfig; sourceTree = "<group>"; };
+		7E9E1B2B98A80A0B8897626AB66FE575 /* WHExpandMoreRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHExpandMoreRow.swift; path = WHTableView/Expand/WHExpandMoreRow.swift; sourceTree = "<group>"; };
 		8495040B7D3CF04F158123C08BDF66EA /* Pods-WHTableView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WHTableView_Example-dummy.m"; sourceTree = "<group>"; };
-		8DEE4B98D74FA3F00FD06FEE49C95238 /* WHTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHTableView.swift; path = WHTableView/Core/WHTableView.swift; sourceTree = "<group>"; };
+		85316E947002A58C75FA93256A3573B9 /* WHBaseRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHBaseRow.swift; path = WHTableView/Core/WHBaseRow.swift; sourceTree = "<group>"; };
 		9198D84C17EC4924B9B1626A31528EE1 /* Pods-WHTableView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WHTableView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9A3B4FE952641A3142303CE528F275C0 /* WHProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHProtocol.swift; path = WHTableView/Base/WHProtocol.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A4FA88CD5564AE854DBAFF0A40AB6F5D /* Pods-WHTableView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WHTableView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A50BDB6F0B56D483D423DA5421923CB4 /* WHTableViewRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHTableViewRow.swift; path = WHTableView/Core/WHTableViewRow.swift; sourceTree = "<group>"; };
 		B0F661C4C1A24BA86C060776AA802D3A /* Pods-WHTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WHTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B3E9F02C222261531A6A111B33CF527E /* WHTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WHTableView.debug.xcconfig; sourceTree = "<group>"; };
+		B8397D0DFEF756ECA08EB8932CB8AD4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		B9B781DE4E62C5E10925167F9275147A /* Pods-WHTableView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WHTableView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		CD8E4419AE4C45085A7A1BE12D8D7758 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		CE2AA7E961DA1DA44F59563DB52C1E9A /* WHTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WHTableView.debug.xcconfig; sourceTree = "<group>"; };
+		BEB0D1C395BCA8D932C4523948397D47 /* WHLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHLog.swift; path = WHTableView/Base/WHLog.swift; sourceTree = "<group>"; };
 		D7873BC4E82C03102C9379B5C4B833F1 /* Pods-WHTableView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WHTableView_Example.modulemap"; sourceTree = "<group>"; };
-		D93C86FE3107AFF588BC73B2653AE4C8 /* WHTableView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WHTableView-Info.plist"; sourceTree = "<group>"; };
+		D9C2FAAF448987A559AC251B1DEAE44D /* WHTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WHTableView-prefix.pch"; sourceTree = "<group>"; };
+		DF160053F8BD3440AC4F3CBD457621D8 /* WHTableView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WHTableView-Info.plist"; sourceTree = "<group>"; };
 		E2ECBD190561CF136713FDC34626CBB3 /* Pods-WHTableView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WHTableView_Tests-dummy.m"; sourceTree = "<group>"; };
-		E4AB5B8A306AD3AF9E504AFAB7A064F6 /* WHTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WHTableView-umbrella.h"; sourceTree = "<group>"; };
-		EB083AD2882C53F8CCAB258D8330B6A8 /* WHExpandMoreRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHExpandMoreRow.swift; path = WHTableView/Expand/WHExpandMoreRow.swift; sourceTree = "<group>"; };
 		EBC6FCB4421435814DFCE60EF1E3E6FB /* Pods-WHTableView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WHTableView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		EC1BD195AD2A33468EB6D133E753B339 /* Pods-WHTableView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WHTableView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		F8B85E7FB4C9C79B63C1A4E9D3EAA965 /* WHTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WHTableView.modulemap; sourceTree = "<group>"; };
+		F246B13507ED040449BA45DF6CF31CD9 /* WHTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WHTableView-dummy.m"; sourceTree = "<group>"; };
+		F9E2C263CD585BF402980E3A3C5EABB9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		FEDC313D44163D8FE63CC477B9840FD8 /* Pods-WHTableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WHTableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FF80F4072C2066317CEE64F7B74D0D7C /* WHTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHTableView.swift; path = WHTableView/Core/WHTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,12 +122,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4338EF808EA00D897B747B0AD9B0221C /* Core */ = {
+		3B66F5310759F2653A7171C1ADE5E2AC /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				8DEE4B98D74FA3F00FD06FEE49C95238 /* WHTableView.swift */,
-				63FA754968C428312B02A97A2E325E2F /* WHTableViewRow.swift */,
-				3E85ADB11D07A58F245DA86D3197F308 /* WHTableViewSection.swift */,
+				85316E947002A58C75FA93256A3573B9 /* WHBaseRow.swift */,
+				4625D04E6476DBBC7062AA39D70432F0 /* WHProtocol.swift */,
+				FF80F4072C2066317CEE64F7B74D0D7C /* WHTableView.swift */,
+				A50BDB6F0B56D483D423DA5421923CB4 /* WHTableViewRow.swift */,
+				6A5D9C40EDE27DD58BEA63C1D0334C67 /* WHTableViewSection.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -135,9 +137,22 @@
 		453A18C02C9D8265C2CF80E17DE5A4CD /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EC5159B34AFCDC17565841C24B488BD2 /* WHTableView */,
+				4B6EEBF61BA73FBCDCBBABC4BBA9EACE /* WHTableView */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4B6EEBF61BA73FBCDCBBABC4BBA9EACE /* WHTableView */ = {
+			isa = PBXGroup;
+			children = (
+				B111198EECCF9CD28C1CDB296776C69B /* Base */,
+				3B66F5310759F2653A7171C1ADE5E2AC /* Core */,
+				852A7655565732B2F7713419B2F9B2E6 /* Expand */,
+				B7A588EE7DB6D9066C0A9515680244ED /* Pod */,
+				7A584D8E2D881EE46AE843A8B59A0C01 /* Support Files */,
+			);
+			name = WHTableView;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		4DCC858C6BD11690B15FFEDC7E75BCC7 /* Pods-WHTableView_Example */ = {
@@ -181,22 +196,27 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		631DF7A598D224ABBFC3B7F22EE65842 /* Expand */ = {
+		7A584D8E2D881EE46AE843A8B59A0C01 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EB083AD2882C53F8CCAB258D8330B6A8 /* WHExpandMoreRow.swift */,
+				691C922E712E7C7354D30D72469DF174 /* WHTableView.modulemap */,
+				F246B13507ED040449BA45DF6CF31CD9 /* WHTableView-dummy.m */,
+				DF160053F8BD3440AC4F3CBD457621D8 /* WHTableView-Info.plist */,
+				D9C2FAAF448987A559AC251B1DEAE44D /* WHTableView-prefix.pch */,
+				62D6F042F3567330EB4674F6AA661B75 /* WHTableView-umbrella.h */,
+				B3E9F02C222261531A6A111B33CF527E /* WHTableView.debug.xcconfig */,
+				261BCA4A166F27127DDA8BC2D2A4FDB8 /* WHTableView.release.xcconfig */,
 			);
-			name = Expand;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WHTableView";
 			sourceTree = "<group>";
 		};
-		729AC900021D3DEE62C7E927F7903116 /* Base */ = {
+		852A7655565732B2F7713419B2F9B2E6 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
-				1A673D55BCFCF401D8FE83A1FB104999 /* WHBaseRow.swift */,
-				42AFF87F998E2677190B6AC271EABB96 /* WHLog.swift */,
-				9A3B4FE952641A3142303CE528F275C0 /* WHProtocol.swift */,
+				7E9E1B2B98A80A0B8897626AB66FE575 /* WHExpandMoreRow.swift */,
 			);
-			name = Base;
+			name = Expand;
 			sourceTree = "<group>";
 		};
 		8CB4A87E766D43AFD1AF9B9E899315B4 /* Targets Support Files */ = {
@@ -206,6 +226,24 @@
 				50F5726647DD9D4771FCA2B669A4B300 /* Pods-WHTableView_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B111198EECCF9CD28C1CDB296776C69B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BEB0D1C395BCA8D932C4523948397D47 /* WHLog.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		B7A588EE7DB6D9066C0A9515680244ED /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B8397D0DFEF756ECA08EB8932CB8AD4B /* LICENSE */,
+				F9E2C263CD585BF402980E3A3C5EABB9 /* README.md */,
+				00875655E82EAF9EF3425141E8BD5CD9 /* WHTableView.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -225,44 +263,6 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D3814EAA4A1809C0A9101DCD4DD9DE06 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				CD8E4419AE4C45085A7A1BE12D8D7758 /* LICENSE */,
-				7E84CA572A1ABABECC80375ED160BE5E /* README.md */,
-				386D24C18B6580C753DD72A5C995DDBD /* WHTableView.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		EC5159B34AFCDC17565841C24B488BD2 /* WHTableView */ = {
-			isa = PBXGroup;
-			children = (
-				729AC900021D3DEE62C7E927F7903116 /* Base */,
-				4338EF808EA00D897B747B0AD9B0221C /* Core */,
-				631DF7A598D224ABBFC3B7F22EE65842 /* Expand */,
-				D3814EAA4A1809C0A9101DCD4DD9DE06 /* Pod */,
-				FB6781F527CB9A303727955F3802D79C /* Support Files */,
-			);
-			name = WHTableView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		FB6781F527CB9A303727955F3802D79C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F8B85E7FB4C9C79B63C1A4E9D3EAA965 /* WHTableView.modulemap */,
-				4A801BDAA01CD8358D5B54E07D94052C /* WHTableView-dummy.m */,
-				D93C86FE3107AFF588BC73B2653AE4C8 /* WHTableView-Info.plist */,
-				652E00BD554D5325A8717FA2F5BD863B /* WHTableView-prefix.pch */,
-				E4AB5B8A306AD3AF9E504AFAB7A064F6 /* WHTableView-umbrella.h */,
-				CE2AA7E961DA1DA44F59563DB52C1E9A /* WHTableView.debug.xcconfig */,
-				833C86CD85379CD7E7719A303F004F98 /* WHTableView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/WHTableView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,7 +319,7 @@
 			buildConfigurationList = EA490FE37397BF1E20C0EA7CD03B1D18 /* Build configuration list for PBXNativeTarget "WHTableView" */;
 			buildPhases = (
 				F3447F3C0D2EDDB646362AF7177AC195 /* Headers */,
-				8920DE13E8379A7B034FD20705B2B3B7 /* Sources */,
+				FB93BC9413D5AEE581862243646119F4 /* Sources */,
 				5E0C5C6FFCBFE5F49DDB178E55C65E3D /* Frameworks */,
 				151CE14987FF4B17E80C60C856BF5E6B /* Resources */,
 			);
@@ -413,26 +413,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8920DE13E8379A7B034FD20705B2B3B7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D331D5B297B8706B0C2817558668B66 /* WHBaseRow.swift in Sources */,
-				B3D245F968EA2199492171AAEE835953 /* WHExpandMoreRow.swift in Sources */,
-				892FAA3A43F06CCF085EAD6D9490BD27 /* WHLog.swift in Sources */,
-				54E6AE879AA6F99475062B315943554F /* WHProtocol.swift in Sources */,
-				A55FCBF168D471DC3609418B7EECBD88 /* WHTableView.swift in Sources */,
-				DE5B5F141595C5108435A006838E3DAF /* WHTableView-dummy.m in Sources */,
-				C9491B110EB3DB954E0FEBA0F427E3E7 /* WHTableViewRow.swift in Sources */,
-				552FCDBE90B6FC71AF2B0F01789AE936 /* WHTableViewSection.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B4753C28FF0295FC4B1120FDDC849399 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A7A5646BC50F4618F30760DB33477EA7 /* Pods-WHTableView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB93BC9413D5AEE581862243646119F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDECB8545171AF02F73A1E6DC54BAB4D /* WHBaseRow.swift in Sources */,
+				6A0DF28E311483971904032B301D2A7C /* WHExpandMoreRow.swift in Sources */,
+				E89701BF6837C0BFE5D6E5CBDA1DC7C5 /* WHLog.swift in Sources */,
+				74BF0FB6D88836942A766D1106172E43 /* WHProtocol.swift in Sources */,
+				24076F78B9A19FA5AFEBFC59949D62AD /* WHTableView.swift in Sources */,
+				4195A2E7B8D64C5EF437FE69CACABA98 /* WHTableView-dummy.m in Sources */,
+				E1DB91D231619487D8CC717381020D7A /* WHTableViewRow.swift in Sources */,
+				39F52BD51980A4CB92BBCC2E773F428C /* WHTableViewSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +454,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		53ED13479D32532B415CEE95EADDB818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E9F02C222261531A6A111B33CF527E /* WHTableView.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WHTableView/WHTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WHTableView/WHTableView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WHTableView/WHTableView.modulemap";
+				PRODUCT_MODULE_NAME = WHTableView;
+				PRODUCT_NAME = WHTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		790EF688A48E2EA8A9BE9979C66636B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B0F661C4C1A24BA86C060776AA802D3A /* Pods-WHTableView_Tests.release.xcconfig */;
@@ -651,39 +683,6 @@
 			};
 			name = Debug;
 		};
-		D0A89F1813DB47631E7506922C918B2C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 833C86CD85379CD7E7719A303F004F98 /* WHTableView.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WHTableView/WHTableView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WHTableView/WHTableView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WHTableView/WHTableView.modulemap";
-				PRODUCT_MODULE_NAME = WHTableView;
-				PRODUCT_NAME = WHTableView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		DEFD3C3EBAA118AE42A049095BEE6C82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEDC313D44163D8FE63CC477B9840FD8 /* Pods-WHTableView_Example.debug.xcconfig */;
@@ -718,9 +717,9 @@
 			};
 			name = Debug;
 		};
-		E2D6710F98C26A22DAF294816AB19C75 /* Debug */ = {
+		E09516E97CDE3364DA9CA4EEF152ADA3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE2AA7E961DA1DA44F59563DB52C1E9A /* WHTableView.debug.xcconfig */;
+			baseConfigurationReference = 261BCA4A166F27127DDA8BC2D2A4FDB8 /* WHTableView.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -743,12 +742,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		E7A3A0D0D8BC353CF289E8A1D8CDCEC4 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -809,8 +809,8 @@
 		EA490FE37397BF1E20C0EA7CD03B1D18 /* Build configuration list for PBXNativeTarget "WHTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2D6710F98C26A22DAF294816AB19C75 /* Debug */,
-				D0A89F1813DB47631E7506922C918B2C /* Release */,
+				53ED13479D32532B415CEE95EADDB818 /* Debug */,
+				E09516E97CDE3364DA9CA4EEF152ADA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
